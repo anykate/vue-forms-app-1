@@ -103,8 +103,10 @@ onMounted(() => {
 					<ObjectElement
 						:name="index"
 						:add-class="[
-							'task-container',
-							tasksModel.tasks[index].type === 'Personal' ? 'text-red-500' : 'text-purple-500',
+							'bg-gray-100 p-2',
+							tasksModel.tasks[index].type === 'Personal'
+								? 'border-l-4 border-green-500'
+								: 'border-l-4 border-indigo-500',
 						]"
 					>
 						<ButtonElement
