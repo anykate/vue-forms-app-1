@@ -92,9 +92,7 @@ onMounted(() => {
 				:controls="{
 					add: false,
 				}"
-				:add-class="{
-					handle: 'task-sort-handle',
-				}"
+				:add-class="['my-4']"
 				sort
 				@sort="syncToStorage"
 				@remove="syncToStorage"
